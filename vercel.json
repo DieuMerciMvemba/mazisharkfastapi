@@ -1,17 +1,16 @@
 {
   "name": "mazishark-serveur",
-  "version": 2,
   "functions": {
-    "api/index.py": {
+    "api/**/*.py": {
       "runtime": "python3.11",
-      "includeFiles": "deploy_vercel/data/**"
+      "includeFiles": "data/**"
     }
   },
   "routes": [
     { "src": "/(.*)", "dest": "/api/index.py" }
   ],
   "env": {
-    "MAZI_DATA_PATH": "deploy_vercel/data/habitat_index_H.nc",
+    "MAZI_DATA_PATH": "data/habitat_index_H.nc",
     "CORS_ALLOW_ORIGINS": "*"
   }
 }
