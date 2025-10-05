@@ -1,0 +1,6 @@
+fastapi==0.115.0
+numpy==2.0.2
+xarray==2025.9.1
+matplotlib==3.10.0
+netCDF4==1.7.2
+typing_extensions>=4.9.0
