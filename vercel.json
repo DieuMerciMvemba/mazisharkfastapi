@@ -2,7 +2,7 @@
   "name": "mazishark-serveur",
   "functions": {
     "api/**/*.py": {
-      "runtime": "python3.11",
+      "runtime": "vercel-python@0.5.1",
       "includeFiles": "data/**"
     }
   },
