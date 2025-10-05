@@ -1,13 +1,16 @@
 {
-  "name": "mazishark-serveur",
-  "functions": {
-    "api/**/*.py": {
-      "runtime": "python3.12",
-      "includeFiles": "data/**"
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python"
     }
-  },
+  ],
   "routes": [
-    { "src": "/(.*)", "dest": "/api/index.py" }
+    {
+      "src": "/(.*)",
+      "dest": "api/index.py"
+    }
   ],
   "env": {
     "MAZI_DATA_PATH": "data/habitat_index_H.nc",
