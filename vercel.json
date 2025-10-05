@@ -4,10 +4,7 @@
   "functions": {
     "api/index.py": {
       "runtime": "python3.11",
-      "includeFiles": [
-        "deploy_vercel/requirements.txt",
-        "deploy_vercel/data/**"
-      ]
+      "includeFiles": "deploy_vercel/data/**"
     }
   },
   "routes": [
